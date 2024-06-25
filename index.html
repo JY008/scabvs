@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .product-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .donate-instructions {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .donate-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .donate-button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1 1 40%;
+            max-width: 200px;
+        }
+        .donate-button img {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .bitcoin img { background-color: #ffffff; }
+        .ethereum img { background-color: #ffffff; }
+        .dogecoin img { background-color: #ffffff; }
+        .paypal img { background-color: #ffffff; }
+        .bitcoin { background-color: #f7931a; color: white; }
+        .ethereum { background-color: #3c3c3d; color: white; }
+        .dogecoin { background-color: #c2a633; color: white; }
+        .paypal { background-color: #003087; color: white; }
+        .license-terms {
+            font-size: 0.8em;
+            color: #777;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        @media (max-width: 600px) {
+            .donate-button {
+                padding: 10px 15px;
+                gap: 10px;
+            }
+            .donate-button img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-name">Awesome Freeware</div>
+        <div class="product-description">This is a short description of the awesome freeware product that you can use for free.</div>
+        <div class="donate-instructions">If you like our product, please consider donating to support us!</div>
+        <div class="donate-buttons">
+            <button class="donate-button paypal" onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=your-paypal-button-id-here'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg" alt="PayPal">Donate with PayPal
+            </button>
+            <button class="donate-button bitcoin" onclick="window.location.href='bitcoin:your-bitcoin-address-here'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin">Donate with Bitcoin
+            </button>
+            <button class="donate-button ethereum" onclick="window.location.href='ethereum:your-ethereum-address-here'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum-icon-purple.svg" alt="Ethereum">Donate with Ethereum
+            </button>
+            <button class="donate-button dogecoin" onclick="window.location.href='dogecoin:your-dogecoin-address-here'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Dogecoin_Logo.png" alt="Dogecoin">Donate with Dogecoin
+            </button>
+        </div>
+    </div>
+    <div class="license-terms">
+        <p>
+            This software is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+        </p>
+        <p>
+            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use the Software for personal use. For commercial and business use, please contact us at <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+        <p>
+            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        </p>
+    </div>
+</body>
+</html>
